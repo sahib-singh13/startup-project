@@ -31,6 +31,24 @@ Here are some of the key decisions I made:
 -   **Build Tool**: [Create React App](https://create-react-app.dev/)
 -   **Deployment**: [Vercel](https://vercel.com/)
 
+## Application Routes
+
+The application is structured with both public-facing pages and a suite of protected routes that require authentication.
+
+### Public Routes
+-   `/`: The main **Landing Page** that serves as the public entry point.
+-   `/login`: The **Login Page** for existing users.
+-   `/signup`: The **Sign-up Page** for new users to create an account.
+
+### Protected Routes
+These routes are only accessible after a user "logs in" and are all rendered within the main dashboard layout.
+-   `/dashboard`: The main **Dashboard** with summary stats and charts.
+-   `/employees`: The **Employees Page** where all team members are listed.
+-   `/employees/add`: A form to **Add a new Employee**.
+-   `/employees/edit`: A form to **Edit an existing Employee's** details.
+-   `/tasks`: The **Tasks Page** for viewing and managing all assigned tasks.
+-   `/settings`: The main **Settings Page**, which contains nested tabs for Profile, Notifications, Security, and System preferences.
+
 ## Getting Started
 
 To get a local copy up and running, follow these simple steps.
